@@ -2,7 +2,7 @@
 #include<stdio.h>
 /**
 * main -enrty point
-*return: Always 0 (when the program is successful)
+*return: 0 (success)
 */
 main(void)
 {
