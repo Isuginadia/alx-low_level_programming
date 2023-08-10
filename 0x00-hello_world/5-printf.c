@@ -1,11 +1,11 @@
-
 #include<stdio.h>
 /**
 * main -enrty point
-*return: Always 0 (when the program is successful)
+*Return: 0 (success)
 */
- int main(void)
+int main(void)
 {
-printf("with proper grammar, but the outcome is a piece of art,\n");
+
+printf("with proper grammar, but the outcome is a piece of art, \n");
 return (0);
 }
