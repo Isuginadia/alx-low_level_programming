@@ -1,32 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
-  * cap_string - ...
-  * @s: ...
-  *
-  * Return: char value
-  */
-char *cap_string(char *s)
+ * string_toupper - change all lowercase to uppercase
+ * @n: pointer
+ *
+ * Return: n
+ */
+char *string_toupper(char *n)
 {
-	int a = 0, i;
-	int cspc = 13;
-	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
+	int i;
 
-	while (s[a])
+	i = 0;
+	while (n[i] != '\0')
 	{
-		i = 0;
-
-		while (i < cspc)
-		{
-			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
-				s[a] -= 32;
-
-			i++;
-		}
-
-		a++;
+		if (n[i] >= 'a' && n[i] <= 'z')
+			n[i] = n[i] - 32;
+		i++;
 	}
-
-	return (s);
+	return (n);
 }
+
+
